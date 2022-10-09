@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>At1-Li4</title>
+</head>
+
+<style>
+
+    .parent{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 200px;
+    }
+    .mainDiv{
+        display: flex;
+        width: fit-content;
+        border: 2px solid rgb(110, 67, 67);
+        padding: 24px 35px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(201, 182, 182);
+    }
+
+    .title{
+        border-bottom: 3px solid black;
+        width:100%;
+        text-align: center;
+        
+    }
+    
+    .textBox{
+        font-size: 18px;
+        text-align: center       
+    }
+
+    .numberBox{
+        margin-bottom: 10px;
+        font-size: 16px;
+        border: 2px solid rgb(44, 32, 32);
+        border-radius: 3px;
+        text-align: center;
+        padding: 5px;
+    }
+
+    .convertBnt{
+        margin-top: 10px;
+        background-color: rgb(41, 116, 41);
+        border: 2px solid rgb(51, 100, 51);    
+        color: lightgray;    
+        border-radius: 3px;
+        padding: 4px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;        
+        font-weight: 500;
+        font-size: 16px;
+        cursor: pointer;        
+        transition: background-color 0.2s, color 0.2s;
+    }
+
+    .convertBnt:hover{
+        background-color: lightgray;        
+        border: 2px solid rgb(0, 200, 0);
+        color: rgb(0, 200, 0);
+    }
+
+    .radioBnt{
+        margin: 20px 0;
+        font-size: 15px;
+    }
+
+
+</style>
+
+<script src="lista4 -1.js"></script>
+
+<body style="background-color: rgb(209, 203, 203);">
+    <div class="parent">
+        <div class="mainDiv">
+
+            <div class="title">
+                <h4>Converção:</h4>
+            </div>
+
+            <div class="radioBnt">
+                <input type="radio" id="CF" name="radioBnt">
+                <label for="CF">Celsius Para Farenheit</label>
+                <input type="radio" id="FC" name="radioBnt">
+                <label for="FC">Farenheit Para Celsius</label> 
+            </div>
+            
+            <input class="numberBox" id="numberBox" type="number" placeholder="Insira a temperatura">
+            <h4 class="textBox" id="textBox">-</h4>
+            <button class="convertBnt" onclick="menu()">Converter</button>
+
+        </div>
+    </div>
+</body>
+</html>
